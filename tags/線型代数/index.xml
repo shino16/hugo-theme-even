@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>線型代数 on shino16</title>
+    <link>https://shino16.github.io/blog/tags/%E7%B7%9A%E5%9E%8B%E4%BB%A3%E6%95%B0/</link>
+    <description>Recent content in 線型代数 on shino16</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 19 Feb 2021 15:29:27 +0900</lastBuildDate><atom:link href="https://shino16.github.io/blog/tags/%E7%B7%9A%E5%9E%8B%E4%BB%A3%E6%95%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>みんプロ2019 E - Odd Subrectangles</title>
+      <link>https://shino16.github.io/blog/post/p/yahoo_procon2019_qual_e/</link>
+      <pubDate>Fri, 19 Feb 2021 15:29:27 +0900</pubDate>
+      
+      <guid>https://shino16.github.io/blog/post/p/yahoo_procon2019_qual_e/</guid>
+      <description>考察 行列に $(0,1)$—ベクトルを掛けていくつかの行・列を取り出すことなどを考えると、問題は次のように言い換えられます。 $N \times M$ の $\mathbb{F}_2$ 行列 $A$ が</description>
+    </item>
+    
+  </channel>
+</rss>

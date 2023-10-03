@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://shino16.github.io/blog/sitemap.xml

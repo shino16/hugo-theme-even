@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>No.1978 Permutation Repetition - shino16</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="shino16" /><meta name="description" content="次の問題のテスター解です．形式的冪級数の操作により $O(N \log N)$ で解けます． 問題文を次のように言い換えます． ${1,\ldots,N}$ の順列 $\sigma$ が与えられる．$\tau^M =" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.110.0 with theme even" />
+
+
+<link rel="canonical" href="https://shino16.github.io/blog/post/p/yuki1978/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/blog/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/blog/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/blog/favicon-16x16.png">
+<link rel="manifest" href="/blog/manifest.json">
+<link rel="mask-icon" href="/blog/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/blog/sass/main.min.c9cedc833526a91ee1d9988d16493ed2bb04090270bc9d133d142865cd755421.css" rel="stylesheet">
+<link href="/blog/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/blog/css/custom.css">
+
+
+<meta property="og:title" content="No.1978 Permutation Repetition" />
+<meta property="og:description" content="次の問題のテスター解です．形式的冪級数の操作により $O(N \log N)$ で解けます． 問題文を次のように言い換えます． ${1,\ldots,N}$ の順列 $\sigma$ が与えられる．$\tau^M =" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://shino16.github.io/blog/post/p/yuki1978/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-06-10T14:12:34+01:00" />
+<meta property="article:modified_time" content="2022-06-10T14:12:34+01:00" />
+<meta itemprop="name" content="No.1978 Permutation Repetition">
+<meta itemprop="description" content="次の問題のテスター解です．形式的冪級数の操作により $O(N \log N)$ で解けます． 問題文を次のように言い換えます． ${1,\ldots,N}$ の順列 $\sigma$ が与えられる．$\tau^M ="><meta itemprop="datePublished" content="2022-06-10T14:12:34+01:00" />
+<meta itemprop="dateModified" content="2022-06-10T14:12:34+01:00" />
+<meta itemprop="wordCount" content="457">
+<meta itemprop="keywords" content="問題,数え上げ," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="No.1978 Permutation Repetition"/>
+<meta name="twitter:description" content="次の問題のテスター解です．形式的冪級数の操作により $O(N \log N)$ で解けます． 問題文を次のように言い換えます． ${1,\ldots,N}$ の順列 $\sigma$ が与えられる．$\tau^M ="/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css" integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js" integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+
+</head>
+<body onload="onload()">
+  <script>
+  function onload() {
+    document.getElementById("footer-email").setAttribute("href", "mailto:" + "masatosinokawa" + "@" + "gmail.com");
+  }
+  </script>
+  
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/blog/" class="logo">shino16</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/blog/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/blog/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/blog/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/blog/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/blog/" class="logo">shino16</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/blog/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/blog/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/blog/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/blog/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">No.1978 Permutation Repetition</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-06-10 </span>
+        <div class="post-category">
+            <a href="/blog/categories/%E5%95%8F%E9%A1%8C/"> 問題 </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents"></nav>
+  </div>
+</div>
+
+    <div class="post-content">
+      <p>次の問題のテスター解です．形式的冪級数の操作により $O(N \log N)$ で解けます．</p>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://yukicoder.me/problems/no/1978" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fyukicoder.me%2Fproblems%2Fno%2F1978&key=db98f8c5577d0512bf5cb79a9237e006"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<p>問題文を次のように言い換えます．</p>
+<blockquote>
+<p>${1,\ldots,N}$ の順列 $\sigma$ が与えられる．$\tau^M = \sigma$ を満たす順列 $\tau$ の個数を求めよ．</p>
+</blockquote>
+<p>$\sigma$ をサイクルの非交和 (disjoint union) に分解しておきます．</p>
+<p>$km$-サイクルを $M$ 乗すると $k$ 個の $m$-サイクルが出来る条件は，$\gcd(km, M) = k$ です．また，$k$ 個の $m$-サイクルから元の $km$-サイクルを復元する方法は $(k-1)! m^{k-1}$ 通りあります．</p>
+<p>そこで，各 $m$ について，$\tau$ が含む全ての $m$-サイクルをいくつかのサイクルにまとめることを考えます．$\tau$ が $m$-サイクルを $s$ 個含むとき，これらを ($M$ 乗すると元の $m$-サイクル $s$ 個に戻るような) $1$ 個以上のサイクルとして並べる方法の数を $f(s)$ とします．$f(s)$ の指数型母関数は，
+$$
+\sum_{s \geq 0} \frac{f(s)}{s!} x^s = \exp \left(\sum_k \frac{(k-1)!m^{k-1}}{k!} x^k \right)
+$$
+で表せます．ただし $k$ は $\gcd(km, M) = k$ を満たす範囲を動くとします．</p>
+<p>右辺の $s$ 次の項の係数は $O(s \log s)$ 時間で計算できます．各 $m$ について，この値の総積をとればよいです．よって $O(N \log N)$ 時間でこの問題が解けました．</p>
+
+    </div>
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="/blog/tags/%E5%95%8F%E9%A1%8C/">問題</a>
+          <a href="/blog/tags/%E6%95%B0%E3%81%88%E4%B8%8A%E3%81%92/">数え上げ</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/blog/post/work/intern-pfn/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">PFN2023夏季インターン参加記</span>
+            <span class="prev-text nav-mobile">前の記事へ</span>
+          </a>
+        <a class="next" href="/blog/post/algo/1%E3%81%AE%E4%BD%8D%E3%81%A7%E5%A0%B4%E5%90%88%E5%88%86%E3%81%91%E3%81%99%E3%82%8B%E6%A1%81dp-c&#43;&#43;/">
+            <span class="next-text nav-default">1の位で場合分けする桁DP (C&#43;&#43;)</span>
+            <span class="next-text nav-mobile">次の記事へ</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="http://twitter.com/shino16_cp" id="footer-twitter" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://github.com/shino16" id="footer-github" class="iconfont icon-github" title="github"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2020 - 
+    2023<span class="heart"><i class="iconfont icon-pencil"></i></span><span>shino16</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  <script type="text/javascript" src="/blog/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/blog/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/blog/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+
+
+
+<script type="text/javascript" src="/blog/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

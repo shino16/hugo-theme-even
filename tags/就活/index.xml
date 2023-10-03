@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>就活 on shino16</title>
+    <link>https://shino16.github.io/blog/tags/%E5%B0%B1%E6%B4%BB/</link>
+    <description>Recent content in 就活 on shino16</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 03 Oct 2023 12:00:00 +0900</lastBuildDate><atom:link href="https://shino16.github.io/blog/tags/%E5%B0%B1%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PFN2023夏季インターン参加記</title>
+      <link>https://shino16.github.io/blog/post/work/intern-pfn/</link>
+      <pubDate>Tue, 03 Oct 2023 12:00:00 +0900</pubDate>
+      
+      <guid>https://shino16.github.io/blog/post/work/intern-pfn/</guid>
+      <description>しの (@shino1609) です。8月10日から9月29日まで、株式会社 Preferred Networks の夏季インターンシップに「CuPy の開発」というテーマで参加しました。 この記事では、業</description>
+    </item>
+    
+  </channel>
+</rss>
